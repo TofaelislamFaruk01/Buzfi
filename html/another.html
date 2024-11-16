@@ -1,0 +1,917 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BUZFI</title>
+    <!-- Tailwind and DaisyUI -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.14/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- font awesome link-->
+    <script src="https://kit.fontawesome.com/17e9c7a115.js" crossorigin="anonymous"></script>
+</head>
+<body class="text-white">
+          <!-- navbar -->
+          <nav class=" text-white">
+            <div class="navbar bg-blue-500 p-0">
+              <!-- Left Div ( Logo + Hamburger Menu) -->
+              <div class=" navbar-start w-full lg:w-1/6 bg-blue-500 text-white flex items-center lg:justify-start">
+                <!-- Hamburger Menu (Only on small screens) -->
+                <div class="dropdown lg:hidden">
+                  <div tabindex="0" role="button" class="btn btn-ghost text-white">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                  </div>
+                  <ul tabindex="0" class="menu menu-sm dropdown-content bg-red-200 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                    <!-- Hamburger Menu Options -->
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Buy</a></li>
+                    <li><a href="#">Sell</a></li>
+                  </ul>
+                </div>
+            
+                <!-- Logo (Always on the left) -->
+                <img class="p-3 w-1/3 sm:w-1/3 md:w-1/4 lg:w-2/3 h-auto" src="/images/Banner/1st Group.png" alt="Logo">
+              </div>
+            <!-- right div -->
+              <div class="w-5/6 p-2 hidden lg:flex flex-col gap-2 bg-blue-600">
+                <!-- right top -->
+                <div class="border-1 border-white-700 w-full p-1 flex flex-row justify-around  items-center">
+                  <!--  left seller -->
+                  <div>
+                      <p>Become a</p>
+                      <div class="flex flex-wrap">
+                          <a href="" class="mr-2"><i class="fa-solid fa-store" aria-hidden="true"></i> Seller</a>
+                          <a href=""><i class="fa-solid fa-handshake" aria-hidden="true"></i> Affiliate</a>
+                      </div>
+                  </div>
+                  <!-- search box -->
+                  <div class="flex gap-1">
+                    <label class="input input-bordered flex items-center gap-1 bg-white">
+                      <input type="text" class="grow mr-8 xl:mr-32" placeholder="Search in Buzfi..." />
+                      <a href=""><i class="text-white rounded bg-blue-700 p-2 fa-solid fa-magnifying-glass"></i></a>
+                    </label>
+                    <button class="text-gray-600 hover:text-blue-500">
+                          <i class=" text-blue-600 rounded bg-white p-4 fa-solid fa-microphone-lines"></i>
+                    </button>
+                  </div>
+                  <!-- item and cart -->
+                  <div class="flex items-center gap-2">
+                    <!-- item -->
+                        <div class="border-r-4 border-gray-700">
+                          <p>Reorder</p> 
+                          <div class="flex gap-1">
+                            <img class="h-6"  src="/images/Banner/Vectoritem.png" alt="" srcset=""> 
+                            <p class="font-bold mr-2">My items</p>
+                          </div>               
+                        </div>
+                        <!-- account -->
+                        <div class="border-r-4 border-gray-700">
+                          <p>Sign in</p> 
+                          <div class="flex gap-1">
+                            <img src="/images/Banner/account.svg" alt="" srcset=""> 
+                            <p class="font-bold mr-2">Account</p>
+                          </div>               
+                        </div>
+                        <!-- cart -->
+                        <div>
+                          <p class="bg-blue-400 rounded w-1/3 text-center">0</p> 
+                          <div class="flex gap-1">
+                            <img src="/images/Banner/cart.svg" alt="" srcset=""> 
+                            <p class="font-bold">$ 0.00</p>
+                            <a href=""><i class="fa-solid fa-caret-down"></i></a>
+                          </div>               
+                        </div>
+                        
+                  </div>
+                  
+                </div>
+
+                <!-- Right down section -->
+              <div class="border-t-2 border-slate-300  w-full text-xs xl:text-sm 2xl:text-base flex justify-between py-3">
+                <!-- left down  -->
+                <div>
+                      <ul class="flex gap-1 2xl:gap-3">
+                        <li>
+                          <a href=""><i class="fa-solid fa-building"></i>  Department (See All)  <i class="fa-solid fa-caret-down"></i></a>
+                        </li>
+                        <li>
+                          <a href=""><i class="fa-solid fa-graduation-cap"></i>  Bufzi Academy</a>
+                        </li>
+                      </ul>
+                </div>
+                <div>
+                  <ul class="flex gap-1 2xl:gap-3">
+                    <li>
+                      <a href=""><i class="fa-solid fa-bolt"></i>  Deals</a>
+                    </li>
+                    <li>
+                      <a href=""><i class="fa-solid fa-mug-saucer"></i> Grocery and Essentials</a>
+                    </li>
+                    <li>
+                      <a href=""><i class="fa-solid fa-fan"></i>  New Year Goals</a>
+                    </li>
+                    <li>
+                      <a href=""><i class="fa-solid fa-gifts"></i>  Valentines's Day</a>
+                    </li>
+                    <li>
+                      <a href=""><i class="fa-solid fa-gift"></i>  Gifts</a>
+                    </li>
+                    <li>
+                      <a href=""><i class="fa-solid fa-kitchen-set"></i>  Home & Kitchen</a>
+                    </li>
+                    <li>
+                      <a href=""><i class="fa-solid fa-sun"></i>  Daily Needs</a>
+                    </li>
+                  </ul>
+            </div>
+              </div>
+              </div>
+            </div>
+          </nav>
+         <!-- Magic Christmas section -->
+      <section class="border-2 border-red-600 bg-gradient-to-b from-[#74c898] to-[rgba(255,255,255,0)]">
+          <!-- Magic part -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 border-2 border-sky-600">
+              <div class="flex flex-col justify-center ml-4">
+                <h1 class=" text-2xl md:text-4xl font-bold text-center sm:text-left">Unwrap the Magic <br>
+                  of Christmas!</h1>
+                  <p class="text-xs sm:text-sm lg:text-lg text-center sm:text-left ">Discover our exclusive holiday deals! From festive gifts to joyful decorations,find everything you need to make this season unforgettable.</p>
+              </div>
+              <div class="object-cover w-full h-full">
+                <img src="/images/electronic layer/Untitled_design-removebg-preview.png" alt="" class="w-full h-auto">
+              </div>
+            </div>
+       
+        <!-- Electronics  and Kitchen section -->
+        <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-3 mt-2 md:mt-0">
+              <!-- left image -->
+              
+              <div class="w-full max-w-4xl mx-auto px-3 bg-white">
+                <img class="w-full h-full object-contain p-3 xl:p-0" src="/images/electronic layer/Accesories/head phn left.png" alt="Kitchen Image">
+              </div>
+              <!-- Electric items -->
+              <section class="bg-white text-black px-3 py-2">
+              <!-- items header -->
+                   <div class="flex justify-between">
+                        <!-- items title -->
+                      <div class="flex justify-center items-center gap-3">
+                        <div>
+                          <ul>
+                            <li><i class="fa-solid fa-star text-blue-400 text-4xl"></i></li>
+                          </ul>
+                        </div>
+                        <div>
+                          <p>Top categories</p>
+                          <h3 class="font-bold">Electronics accessories</h3>
+                        </div>
+                      </div>
+                      <!-- see all items -->
+                      <div>
+                        <ul>
+                          <li><i class="fa-solid fa-arrow-right-long text-3xl ml-4"></i></li>
+                          <p class="font-bold text-blue-500">See All</p>
+                        </ul>
+                      </div>
+                   </div>
+                    <!--Electric items body -->
+                      <section class="grid grid-cols-2 gap-1 ">
+                              <!-- single card -->
+                              <div class=" flex flex-col bg-blue-400 p-4 shadow-xl justify-center items-center rounded-xl">
+                                <figure class="p-5 flex-grow">
+                                  <img
+                                    src="/images/electronic layer/Accesories/electronics/speaker_1 1.png"
+                                    alt=""
+                                    class="rounded-xl" />
+                                </figure>
+                                <div class=" items-center text-center">
+                                  <h2 class=" text-xs bg-white text-black px-5 py-2 rounded">Musical Accessories</h2>
+                                </div>
+                              </div>
+                              <div class=" flex flex-col bg-blue-200 shadow-xl p-4 justify-center items-center rounded-xl">
+                                <figure class="p-5 flex-grow">
+                                  <img
+                                    src="/images/electronic layer/Accesories/electronics/laptop1.png"
+                                    alt=""
+                                    class="rounded-xl" />
+                                </figure>
+                                <div class=" items-center text-center">
+                                  <h2 class=" text-xs bg-white text-black px-5 py-2 rounded">laptop Accessories</h2>
+                                </div>
+                              </div>
+                              <div class=" flex flex-col bg-orange-400 p-4 shadow-xl justify-center items-center rounded-xl">
+                                <figure class="p-5 flex-grow">
+                                  <img
+                                    src="/images/electronic layer/Accesories/electronics/mobile.png"
+                                    alt=""
+                                    class="rounded-xl" />
+                                </figure>
+                                <div class=" items-center text-center">
+                                  <h2 class=" text-xs bg-white text-black px-5 py-2 rounded">Phone Accessories</h2>
+                                </div>
+                              </div>
+                              <div class=" flex flex-col bg-green-400 p-4 shadow-xl justify-center items-center rounded-xl">
+                                <figure class="p-5 flex-grow">
+                                  <img
+                                    src="/images/electronic layer/Accesories/electronics/banner-img1 1.png"
+                                    alt=""
+                                    class="rounded-xl" />
+                                </figure>
+                                <div class=" items-center text-center">
+                                  <h2 class=" text-xs bg-white text-black px-5 py-2 rounded">Smart Watch</h2>
+                                </div>
+                              </div>
+                        </section>
+               </section>
+
+               <!-- new part -->
+                <!-- Kitchen items -->
+              <section class="bg-white text-black px-3 py-2">
+                <!--kitchen items header -->
+                     <div class="flex justify-between">
+                          <!-- items title -->
+                        <div class="flex justify-center items-center gap-3">
+                          <div>
+                            <ul>
+                              <li><i class="fa-solid fa-star text-blue-400 text-4xl"></i></li>
+                            </ul>
+                          </div>
+                          <div>
+                            <p>Top category</p>
+                            <h3 class="font-bold">Home & Kitchen</h3>
+                          </div>
+                        </div>
+                        <!-- see all items -->
+                        <div>
+                          <ul>
+                            <li><i class="fa-solid fa-arrow-right-long text-3xl ml-4"></i></li>
+                            <p class="font-bold text-blue-500">See All</p>
+                          </ul>
+                        </div>
+                     </div>
+                      <!--kitchen items body -->
+                      <section class="grid grid-cols-2 gap-1 ">
+                        <!-- single card -->
+                      <div class=" flex flex-col bg-blue-400 p-4 shadow-xl justify-center items-center rounded-xl">
+                        <figure class="p-5 flex-grow">
+                          <img
+                            src="/images/electronic layer/Accesories/kitchen/table.png"
+                            alt=""
+                            class="rounded-xl" />
+                        </figure>
+                        <div class=" items-center text-center">
+                          <h2 class=" text-xs bg-white text-black px-5 py-2 rounded">Dining</h2>
+                        </div>
+                      </div>
+                      <div class=" flex flex-col bg-blue-200 shadow-xl p-4 justify-center items-center rounded-xl">
+                        <figure class="p-5 flex-grow">
+                          <img
+                            src=" /images/electronic layer/Accesories/kitchen/lptp.png"
+                            alt=""
+                            class="rounded-xl" />
+                        </figure>
+                        <div class=" items-center text-center">
+                          <h2 class=" text-xs bg-white text-black px-5 py-2 rounded">laptop Accessories</h2>
+                        </div>
+                      </div>
+                      <div class=" flex flex-col bg-orange-400 p-4 shadow-xl justify-center items-center rounded-xl">
+                        <figure class="p-5 flex-grow">
+                          <img
+                            src="/images/electronic layer/Accesories/kitchen/light.png"
+                            alt=""
+                            class="rounded-xl" />
+                        </figure>
+                        <div class=" items-center text-center">
+                          <h2 class=" text-xs bg-white text-black px-5 py-2 rounded">Networking</h2>
+                        </div>
+                      </div>
+                      <div class=" flex flex-col bg-green-400 p-4 shadow-xl justify-center items-center rounded-xl">
+                        <figure class="p-5 flex-grow">
+                          <img
+                            src=" /images/electronic layer/Accesories/kitchen/Untitled/home-security-ip-camera-wireless-security-camera-closed-circuit-television-surveillance-360-camera-bcae52567230378d810924cbfadb4e66 1.png"
+                            alt=""
+                            class="rounded-xl" />
+                        </figure>
+                        <div class=" items-center text-center">
+                          <h2 class=" text-xs bg-white text-black px-5 py-2 rounded">Home Security</h2>
+                        </div>
+                      </div>
+                    </section>
+                 </section>
+
+
+               <!-- new kitchen part end -->
+                <!-- right image -->
+                
+                <div class="w-full max-w-4xl mx-auto px-3 bg-white">
+                  <img class="w-full h-full object-contain p-3 xl:p-0" src=" /images/electronic layer/Accesories/kitchen/image right.png" alt="Kitchen Image">
+                </div>  
+        </div>
+   </section>
+
+
+   <!-- for check -->
+    <p class="text-center">check</p>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-3 mt-2 md:mt-0">
+      
+      <!-- left image -->
+      <!-- <div class="w-full max-w-4xl mx-auto px-3 bg-white">
+        <img class="w-full h-full object-contain p-3 xl:p-0" src="/Buzfi-main/images/electronic layer/Accesories/head phn left.png" alt="Kitchen Image">
+      </div> -->
+      <!-- <div class="w-full max-w-4xl mx-auto px-3 bg-white flex justify-center items-center">
+        <img class="w-full max-h-[500px] object-contain p-3 xl:p-0" src="/Buzfi-main/images/electronic layer/Accesories/head phn left.png" alt="Kitchen Image">
+    </div> -->
+    <!-- <div class="w-full max-w-4xl mx-auto px-3 bg-white flex justify-center items-center">
+      <img class="w-full h-auto xl:h-[400px] object-contain p-3 xl:p-0" src="/Buzfi-main/images/electronic layer/Accesories/head phn left.png" alt="Kitchen Image">
+    </div> -->
+    <div class="w-full max-w-4xl mx-auto px-3 bg-white flex justify-center items-center">
+      <img class="w-full h-full object-cover py-5 px-3" src="/images/electronic layer/Accesories/head phn left.png" alt="Kitchen Image">
+    </div>
+    
+    
+
+      <!-- Electric items -->
+      <section class="bg-white text-black px-3 py-2">
+      <!-- items header -->
+           <div class="flex justify-between">
+                <!-- items title -->
+              <div class="flex justify-center items-center gap-3">
+                <div>
+                  <ul>
+                    <li><i class="fa-solid fa-star text-blue-400 text-4xl"></i></li>
+                  </ul>
+                </div>
+                <div>
+                  <p>Top categories</p>
+                  <h3 class="font-bold">Electronics accessories</h3>
+                </div>
+              </div>
+              <!-- see all items -->
+              <div>
+                <ul>
+                  <li><i class="fa-solid fa-arrow-right-long text-3xl ml-4"></i></li>
+                  <p class="font-bold text-blue-500">See All</p>
+                </ul>
+              </div>
+           </div>
+            <!--Electric items body -->
+            <div class="grid grid-cols-2 gap-2">
+              <!-- Card 1 -->
+              <div class="flex flex-col bg-blue-400 p-4 shadow-xl justify-between items-center rounded-xl">
+                <figure class="w-full h-32 flex items-center justify-center overflow-hidden rounded-xl flex-grow">
+                  <img 
+                    src="/images/electronic layer/Accesories/electronics/speaker_1 1.png" 
+                    alt="Wireless home security camera" 
+                    class="object-contain max-h-full max-w-full"
+                  />
+                </figure>
+                <div class="items-center text-center mt-3">
+                  <h2 class="text-xs bg-white text-black px-5 py-2 rounded">Home Security</h2>
+                </div>
+              </div>
+            
+              <!-- Card 2 -->
+              <div class="flex flex-col bg-blue-200 p-4 shadow-xl justify-between items-center rounded-xl ">
+                <figure class="w-full h-32 flex items-center justify-center overflow-hidden rounded-xl flex-grow">
+                  <img 
+                    src="/images/electronic layer/Accesories/electronics/laptop1.png" 
+                    alt="Another security camera" 
+                    class="object-contain max-h-full max-w-full"
+                  />
+                </figure>
+                <div class="items-center text-center mt-3">
+                  <h2 class="text-xs bg-white text-black px-5 py-2 rounded">Another Security</h2>
+                </div>
+              </div>
+            
+              <!-- Card 3 -->
+              <div class="flex flex-col bg-orange-400 p-4 shadow-xl justify-between items-center rounded-xl ">
+                <figure class="w-full h-32 flex items-center justify-center overflow-hidden rounded-xl flex-grow">
+                  <img 
+                    src="/images/electronic layer/Accesories/electronics/mobile.png" 
+                    alt="Different security camera" 
+                    class="object-contain max-h-full max-w-full"
+                  />
+                </figure>
+                <div class="items-center text-center mt-3">
+                  <h2 class="text-xs bg-white text-black px-5 py-2 rounded">Different Security</h2>
+                </div>
+              </div>
+               <!-- Card 4 -->
+              <div class="flex flex-col bg-green-400 p-4 shadow-xl justify-between items-center rounded-xl ">
+                <figure class="w-full h-32 flex items-center justify-center overflow-hidden rounded-xl flex-grow">
+                  <img 
+                    src="/images/electronic layer/Accesories/electronics/watch.png" 
+                    alt="Different security camera" 
+                    class="object-contain max-h-full max-w-full"
+                  />
+                </figure>
+                <div class="items-center text-center mt-3">
+                  <h2 class="text-xs bg-white text-black px-5 py-2 rounded">Different Security</h2>
+                </div>
+              </div>
+            </div>
+       </section>
+
+       <!-- new part -->
+        <!-- Kitchen items -->
+      <section class="bg-white text-black px-3 py-2">
+        <!--kitchen items header -->
+             <div class="flex justify-between">
+                  <!-- items title -->
+                <div class="flex justify-center items-center gap-3">
+                  <div>
+                    <ul>
+                      <li><i class="fa-solid fa-star text-blue-400 text-4xl"></i></li>
+                    </ul>
+                  </div>
+                  <div>
+                    <p>Top category</p>
+                    <h3 class="font-bold">Home & Kitchen</h3>
+                  </div>
+                </div>
+                <!-- see all items -->
+                <div>
+                  <ul>
+                    <li><i class="fa-solid fa-arrow-right-long text-3xl ml-4"></i></li>
+                    <p class="font-bold text-blue-500">See All</p>
+                  </ul>
+                </div>
+             </div>
+              <!--kitchen items body -->
+              <div class="grid grid-cols-2 gap-2">
+                <!-- Card 1 -->
+                <div class="flex flex-col bg-blue-400 p-4 shadow-xl justify-between items-center rounded-xl">
+                  <figure class="w-full h-32 flex items-center justify-center overflow-hidden rounded-xl flex-grow">
+                    <img 
+                      src="/images/electronic layer/Accesories/kitchen/cc.png" 
+                      alt="Wireless home security camera" 
+                      class="object-contain max-h-full max-w-full"
+                    />
+                  </figure>
+                  <div class="items-center text-center mt-3">
+                    <h2 class="text-xs bg-white text-black px-5 py-2 rounded">Home Security</h2>
+                  </div>
+                </div>
+              
+                <!-- Card 2 -->
+                <div class="flex flex-col bg-blue-200 p-4 shadow-xl justify-between items-center rounded-xl ">
+                  <figure class="w-full h-32 flex items-center justify-center overflow-hidden rounded-xl flex-grow">
+                    <img 
+                      src="/images/electronic layer/Accesories/kitchen/light.png" 
+                      alt="Another security camera" 
+                      class="object-contain max-h-full max-w-full"
+                    />
+                  </figure>
+                  <div class="items-center text-center mt-3">
+                    <h2 class="text-xs bg-white text-black px-5 py-2 rounded">Another Security</h2>
+                  </div>
+                </div>
+              
+                <!-- Card 3 -->
+                <div class="flex flex-col bg-orange-400 p-4 shadow-xl justify-between items-center rounded-xl ">
+                  <figure class="w-full h-32 flex items-center justify-center overflow-hidden rounded-xl flex-grow">
+                    <img 
+                      src="/images/electronic layer/Accesories/kitchen/table.png" 
+                      alt="Different security camera" 
+                      class="object-contain max-h-full max-w-full"
+                    />
+                  </figure>
+                  <div class="items-center text-center mt-3">
+                    <h2 class="text-xs bg-white text-black px-5 py-2 rounded">Different Security</h2>
+                  </div>
+                </div>
+                 <!-- Card 4 -->
+                <div class="flex flex-col bg-green-400 p-4 shadow-xl justify-between items-center rounded-xl ">
+                  <figure class="w-full h-32 flex items-center justify-center overflow-hidden rounded-xl flex-grow">
+                    <img 
+                      src="/images/electronic layer/Accesories/kitchen/lptp.png" 
+                      alt="Different security camera" 
+                      class="object-contain max-h-full max-w-full"
+                    />
+                  </figure>
+                  <div class="items-center text-center mt-3">
+                    <h2 class="text-xs bg-white text-black px-5 py-2 rounded">Different Security</h2>
+                  </div>
+                </div>
+              </div>
+         </section>
+
+
+       <!-- new kitchen part end -->
+        <!-- right image -->
+        
+        <!-- <div class="w-full max-w-4xl mx-auto px-3 bg-white">
+          <img class="w-full h-full object-contain p-3 xl:p-0" src="/Buzfi-main/images/electronic layer/Accesories/kitchen/image right.png" alt="Kitchen Image">
+        </div>   -->
+        <div class="w-full max-w-4xl mx-auto px-3 bg-white flex justify-center items-center">
+          <img class="w-full h-full object-cover py-5 px-3" src="/images/electronic layer/Accesories/kitchen/image right.png" alt="Kitchen Image">
+        </div>
+  </div>
+
+                <!-- new chk -->
+                <p>xvdfv gfrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr </p>
+
+                <section>
+                  <div class="relative flex flex-col bg-white shadow-lg rounded-lg overflow-hidden w-72">
+                    <!-- Top-right Icons -->
+                    <div class="absolute top-2 right-2 flex flex-col gap-2">
+                      <i class="fa-solid fa-heart text-red-500 text-xl"></i>
+                      <i class="fa-solid fa-cart-shopping text-blue-500 text-xl"></i>
+                    </div>
+                  
+                    <!-- Image (Centering the Image) -->
+                    <div class="flex justify-center items-center p-4">
+                      <img class="w-32 h-32 object-contain" src="/images/items_3_4/bottle.png" alt="Item Image">
+                    </div>
+                  
+                    
+                  
+                    <!-- Price Section -->
+                    <div class=" px-4 py-2 bg-gray-100">
+                      <h3 class="font-bold text-lg text-black">Item Name jkhjk lkjlkkjl....</h3>
+                      <p class="text-xl text-green-500 font-semibold">$99.99  <span class="text-sm text-gray-500 line-through">$120.00</span></p>
+                    </div>
+                  </div>
+                  
+                </section>
+
+         <section class="flex">
+                                  <div class="w-full max-w-4xl mx-auto px-3 bg-white flex justify-center items-center">
+                                    <img class="w-full h-full object-cover py-5 px-3" src="/images/electronic layer/Accesories/kitchen/image right.png" alt="Kitchen Image">
+                                  </div>
+                                  
+            <div class="flex flex-wrap justify-center gap-4 p-8">
+              
+              <div class="relative flex flex-col bg-white shadow-lg rounded-lg overflow-hidden w-72">
+                
+                <!-- Top-right Icons -->
+                <div class="absolute top-2 right-2 flex flex-col gap-2">
+                  <i class="fa-solid fa-heart text-red-500 text-xl"></i>
+                  <i class="fa-solid fa-cart-shopping text-blue-500 text-xl"></i>
+                </div>
+
+                <!-- Image (Centering the Image) -->
+                <div class="flex justify-center items-center p-4">
+                  <img class="w-32 h-32 object-contain" src="/images/items_3_4/bottle.png" alt="Item Image">
+                </div>
+
+                <!-- Price Section -->
+                <div class="px-4 py-2 bg-gray-100">
+                  <h3 class="font-bold text-lg text-black">Item Name jkhjk lkjlkkjl....</h3>
+                  <p class="text-xl text-green-500 font-semibold">$99.99  <span class="text-sm text-gray-500 line-through">$120.00</span></p>
+                </div>
+              </div>
+              <div class="relative flex flex-col bg-white shadow-lg rounded-lg overflow-hidden w-72">
+                
+                <!-- Top-right Icons -->
+                <div class="absolute top-2 right-2 flex flex-col gap-2">
+                  <i class="fa-solid fa-heart text-red-500 text-xl"></i>
+                  <i class="fa-solid fa-cart-shopping text-blue-500 text-xl"></i>
+                </div>
+
+                <!-- Image (Centering the Image) -->
+                <div class="flex justify-center items-center p-4">
+                  <img class="w-32 h-32 object-contain" src="/images/items_3_4/bottle.png" alt="Item Image">
+                </div>
+
+                <!-- Price Section -->
+                <div class="px-4 py-2 bg-gray-100">
+                  <h3 class="font-bold text-lg text-black">Item Name jkhjk lkjlkkjl....</h3>
+                  <p class="text-xl text-green-500 font-semibold">$99.99  <span class="text-sm text-gray-500 line-through">$120.00</span></p>
+                </div>
+              </div>
+              <div class="relative flex flex-col bg-white shadow-lg rounded-lg overflow-hidden w-72">
+                
+                <!-- Top-right Icons -->
+                <div class="absolute top-2 right-2 flex flex-col gap-2">
+                  <i class="fa-solid fa-heart text-red-500 text-xl"></i>
+                  <i class="fa-solid fa-cart-shopping text-blue-500 text-xl"></i>
+                </div>
+
+                <!-- Image (Centering the Image) -->
+                <div class="flex justify-center items-center p-4">
+                  <img class="w-32 h-32 object-contain" src="/images/items_3_4/bottle.png" alt="Item Image">
+                </div>
+
+                <!-- Price Section -->
+                <div class="px-4 py-2 bg-gray-100">
+                  <h3 class="font-bold text-lg text-black">Item Name jkhjk lkjlkkjl....</h3>
+                  <p class="text-xl text-green-500 font-semibold">$99.99  <span class="text-sm text-gray-500 line-through">$120.00</span></p>
+                </div>
+              </div>
+              <div class="relative flex flex-col bg-white shadow-lg rounded-lg overflow-hidden w-72">
+                
+                <!-- Top-right Icons -->
+                <div class="absolute top-2 right-2 flex flex-col gap-2">
+                  <i class="fa-solid fa-heart text-red-500 text-xl"></i>
+                  <i class="fa-solid fa-cart-shopping text-blue-500 text-xl"></i>
+                </div>
+
+                <!-- Image (Centering the Image) -->
+                <div class="flex justify-center items-center p-4">
+                  <img class="w-32 h-32 object-contain" src="/images/items_3_4/bottle.png" alt="Item Image">
+                </div>
+
+                <!-- Price Section -->
+                <div class="px-4 py-2 bg-gray-100">
+                  <h3 class="font-bold text-lg text-black">Item Name jkhjk lkjlkkjl....</h3>
+                  <p class="text-xl text-green-500 font-semibold">$99.99  <span class="text-sm text-gray-500 line-through">$120.00</span></p>
+                </div>
+              </div>
+              <div class="relative flex flex-col bg-white shadow-lg rounded-lg overflow-hidden w-72">
+                
+                <!-- Top-right Icons -->
+                <div class="absolute top-2 right-2 flex flex-col gap-2">
+                  <i class="fa-solid fa-heart text-red-500 text-xl"></i>
+                  <i class="fa-solid fa-cart-shopping text-blue-500 text-xl"></i>
+                </div>
+
+                <!-- Image (Centering the Image) -->
+                <div class="flex justify-center items-center p-4">
+                  <img class="w-32 h-32 object-contain" src="/images/items_3_4/bottle.png" alt="Item Image">
+                </div>
+
+                <!-- Price Section -->
+                <div class="px-4 py-2 bg-gray-100">
+                  <h3 class="font-bold text-lg text-black">Item Name jkhjk lkjlkkjl....</h3>
+                  <p class="text-xl text-green-500 font-semibold">$99.99  <span class="text-sm text-gray-500 line-through">$120.00</span></p>
+                </div>
+              </div>
+              <div class="relative flex flex-col bg-white shadow-lg rounded-lg overflow-hidden w-72">
+                
+                <!-- Top-right Icons -->
+                <div class="absolute top-2 right-2 flex flex-col gap-2">
+                  <i class="fa-solid fa-heart text-red-500 text-xl"></i>
+                  <i class="fa-solid fa-cart-shopping text-blue-500 text-xl"></i>
+                </div>
+
+                <!-- Image (Centering the Image) -->
+                <div class="flex justify-center items-center p-4">
+                  <img class="w-32 h-32 object-contain" src="/images/items_3_4/bottle.png" alt="Item Image">
+                </div>
+
+                <!-- Price Section -->
+                <div class="px-4 py-2 bg-gray-100">
+                  <h3 class="font-bold text-lg text-black">Item Name jkhjk lkjlkkjl....</h3>
+                  <p class="text-xl text-green-500 font-semibold">$99.99  <span class="text-sm text-gray-500 line-through">$120.00</span></p>
+                </div>
+              </div>
+              <div class="relative flex flex-col bg-white shadow-lg rounded-lg overflow-hidden w-72">
+                
+                <!-- Top-right Icons -->
+                <div class="absolute top-2 right-2 flex flex-col gap-2">
+                  <i class="fa-solid fa-heart text-red-500 text-xl"></i>
+                  <i class="fa-solid fa-cart-shopping text-blue-500 text-xl"></i>
+                </div>
+
+                <!-- Image (Centering the Image) -->
+                <div class="flex justify-center items-center p-4">
+                  <img class="w-32 h-32 object-contain" src="/images/items_3_4/bottle.png" alt="Item Image">
+                </div>
+
+                <!-- Price Section -->
+                <div class="px-4 py-2 bg-gray-100">
+                  <h3 class="font-bold text-lg text-black">Item Name jkhjk lkjlkkjl....</h3>
+                  <p class="text-xl text-green-500 font-semibold">$99.99  <span class="text-sm text-gray-500 line-through">$120.00</span></p>
+                </div>
+              </div>
+              <div class="relative flex flex-col bg-white shadow-lg rounded-lg overflow-hidden w-72">
+                
+                <!-- Top-right Icons -->
+                <div class="absolute top-2 right-2 flex flex-col gap-2">
+                  <i class="fa-solid fa-heart text-red-500 text-xl"></i>
+                  <i class="fa-solid fa-cart-shopping text-blue-500 text-xl"></i>
+                </div>
+
+                <!-- Image (Centering the Image) -->
+                <div class="flex justify-center items-center p-4">
+                  <img class="w-32 h-32 object-contain" src="/images/items_3_4/bottle.png" alt="Item Image">
+                </div>
+
+                <!-- Price Section -->
+                <div class="px-4 py-2 bg-gray-100">
+                  <h3 class="font-bold text-lg text-black">Item Name jkhjk lkjlkkjl....</h3>
+                  <p class="text-xl text-green-500 font-semibold">$99.99  <span class="text-sm text-gray-500 line-through">$120.00</span></p>
+                </div>
+                  </div>
+
+
+
+               </div>
+
+         </section>
+ 
+
+
+
+  
+       
+        
+        <div class="relative flex flex-col bg-blue-400 p-4 shadow-xl justify-between items-center rounded-xl w-72">
+
+          <!-- Image Section -->
+          <figure class="w-full h-32 flex items-center justify-center overflow-hidden rounded-xl flex-grow">
+            <img 
+              src="/images/items_3_4/bottle.png" 
+              alt="Item Image" 
+              class="object-contain max-h-full max-w-full"
+            />
+          </figure>
+        
+          <!-- Item Name and Price Section -->
+          <div class="items-center text-center mt-3">
+            <h2 class="text-xs bg-white text-black px-5 py-2 rounded">Item Name jkhjk lkjlkkjl....</h2>
+            <p class="text-xl text-green-500 font-semibold">
+              $99.99 <span class="text-sm text-gray-500 line-through">$120.00</span>
+            </p>
+          </div>
+        
+          <!-- Top-right Icons -->
+          <div class="absolute top-2 right-2 flex flex-col gap-2">
+            <i class="fa-solid fa-heart text-red-500 text-xl"></i>
+            <i class="fa-solid fa-cart-shopping text-blue-500 text-xl"></i>
+          </div>
+        
+        </div>
+
+        <div class="relative flex flex-col bg-white shadow-lg rounded-lg overflow-hidden w-72">
+                
+          <!-- Top-right Icons -->
+          <div class="absolute top-2 right-2 flex flex-col gap-2">
+            <i class="fa-solid fa-heart text-red-500 text-xl"></i>
+            <i class="fa-solid fa-cart-shopping text-blue-500 text-xl"></i>
+          </div>
+
+          <!-- Image (Centering the Image) -->
+          <div class="flex justify-center items-center p-4">
+            <img class="w-32 h-32 object-contain" src="/images/items_3_4/bottle.png" alt="Item Image">
+          </div>
+
+          <!-- Price Section -->
+          <div class="px-4 py-2 bg-gray-100">
+            <h3 class="font-bold text-lg text-black">Item Name jkhjk lkjlkkjl....</h3>
+            <p class="text-xl text-green-500 font-semibold">$99.99  <span class="text-sm text-gray-500 line-through">$120.00</span></p>
+          </div>
+            </div>
+
+
+            <!-- new section banner 3-->
+
+            <div class="flex flex-col md:flex-row gap-4 px-1 py-3">
+
+              <!-- First Image Container -->
+              <div class="flex flex-col items-center w-full ">
+                <img src="/images/Banner/image lf.png" alt="Image 1" class="w-full h-auto object-contain rounded-lg">
+              </div>
+            
+              <!-- Second Image Container -->
+              <div class="flex flex-col items-center w-full">
+                <img src="/images/Banner/image 89 md.png"  alt="Image 2" class="w-full h-auto  object-contain rounded-lg">
+              </div>
+            
+              <!-- Third Image Container -->
+              <div class="flex flex-col items-center w-full ">
+                <img src="/images/Banner/img right.png"  alt="Image 3" class="w-full h-auto  object-contain rounded-lg">
+              </div>
+            
+            </div>
+
+              <!-- new section banner 2-->
+
+              <div class="flex flex-col md:flex-row gap-4 px-1 py-3">
+
+                <!-- First Image Container -->
+                <div class="flex flex-col items-center w-full ">
+                  <img src="/images/Banner/Big_Banner 7-1.png" alt="Image 1" class="w-full h-auto object-contain rounded-lg">
+                </div>
+              
+                <!-- Second Image Container -->
+                <div class="flex flex-col items-center w-full">
+                  <img src="/images/Banner/Big_Banner_7_2.png"  alt="Image 2" class="w-full h-auto  object-contain rounded-lg">
+                </div>
+              </div>
+
+              <!-- new section banner 4-->
+
+              <div class="flex flex-col md:flex-row gap-4 px-1 py-3">
+
+                <!-- First Image Container -->
+                <div class="flex flex-col items-center w-full ">
+                  <img src="/images/Banner/gr1.png" alt="Image 1" class="w-full h-auto object-contain rounded-lg">
+                </div>
+              
+                <!-- Second Image Container -->
+                <div class="flex flex-col items-center w-full">
+                  <img src="/images/Banner/gr2.png"  alt="Image 2" class="w-full h-auto  object-contain rounded-lg">
+                </div>
+              </div>
+
+               <!-- new section full banner-->
+                <!-- one Image Container -->
+               <!-- new section full banner-->
+                     <!-- new section full banner-->
+                              <div class="flex flex-col items-center w-full px-1 py-3">
+                                <img 
+                                  src="/images/Banner/Mask group 13.png" 
+                                  alt="Banner Image" 
+                                  class="w-full sm:w-full md:w-full lg:w-full h-auto object-contain rounded-lg"
+                                />
+                              </div>
+
+
+              
+            <!-- new section  -->
+             <section>
+              <div>
+                <i class="fa-solid fa-truck text-3xl text-blue-500"></i>
+              </div>
+              <div>
+                <i class="fa-solid fa-truck text-3xl text-blue-500"> Go for Shipping </i>
+              </div>
+              <div>
+                <i class="fa-solid fa-truck text-3xl text-blue-500"> Go for Shipping </i>
+              </div>
+              <div>
+                <i class="fa-solid fa-truck text-3xl text-blue-500"> Go for Shipping </i>
+              </div>
+              
+             </section>
+
+
+
+            <!-- Section containing 4 divs with an icon and text -->
+                 
+                        <!-- Section containing 4 divs with an icon and text -->
+                      <div class="flex flex-wrap justify-center gap-4 p-4">
+
+                        <!-- First div: Shipping Icon and Text -->
+                        <div class="flex flex-col items-center w-full sm:w-1/2 md:w-1/4">
+                          <i class="fa-solid fa-truck text-3xl text-blue-500"></i>
+                          <p class="mt-2 text-center text-lg font-semibold">Go for Shipping</p>
+                        </div>
+
+                        <!-- Second div: Shipping Icon and Text -->
+                        <div class="flex flex-col items-center w-full sm:w-1/2 md:w-1/4">
+                          <i class="fa-solid fa-box text-3xl text-green-500"></i>
+                          <p class="mt-2 text-center text-lg font-semibold">Go for Shipping</p>
+                        </div>
+
+                        <!-- Third div: Shipping Icon and Text -->
+                        <div class="flex flex-col items-center w-full sm:w-1/2 md:w-1/4">
+                          <i class="fa-solid fa-shipping-fast text-3xl text-red-500"></i>
+                          <p class="mt-2 text-center text-lg font-semibold">Go for Shipping</p>
+                        </div>
+
+                        <!-- Fourth div: Shipping Icon and Text -->
+                        <div class="flex flex-col items-center w-full sm:w-1/2 md:w-1/4">
+                          <i class="fa-solid fa-warehouse text-3xl text-yellow-500"></i>
+                          <p class="mt-2 text-center text-lg font-semibold">Go for Shipping</p>
+                        </div>
+
+                      </div>
+
+
+                      <!-- hbuyygg -->
+                        <!-- black friday section -->
+
+
+          <div class="w-full sm:w-3/4 md:w-1/2 lg:w-1/4 min-h-[400px] sm:min-h-[300px] flex flex-col justify-between relative p-4 text-center" style="background-image: url('/images/items_3_4/Mask group.png'); background-size: cover; background-position: center;">
+            <!-- Thunder Icon in the top-right corner with blue background -->
+            <div class="absolute top-0 right-0 bg-blue-600 text-white p-3 rounded-lg">
+                <i class="fas fa-bolt text "></i> <!-- Thunder icon -->
+            </div>
+        
+            <!-- Day Time Section (Centered and Flex, stacking on mobile) -->
+            <div class="grid grid-cols-4 gap-1 w-full text-center mt-4">
+                <div class="bg-blue-600 text-white rounded-xl flex flex-col justify-center items-center flex-grow min-w-14 p-3">
+                    <h1 class="font-bold text-xl sm:text-2xl md:text-3xl">365</h1>
+                    <p class="text-sm sm:text-base">Day</p>
+                </div>
+                <div class="bg-blue-600 text-white rounded-xl flex flex-col justify-center items-center flex-grow min-w-14 p-3">
+                    <h1 class="font-bold text-xl sm:text-2xl md:text-3xl">22</h1>
+                    <p class="text-sm sm:text-base">Hours</p>
+                </div>
+                <div class="bg-blue-600 text-white rounded-xl flex flex-col justify-center items-center flex-grow min-w-14 p-3">
+                    <h1 class="font-bold text-xl sm:text-2xl md:text-3xl">45</h1>
+                    <p class="text-sm sm:text-base">Minutes</p>
+                </div>
+                <div class="bg-blue-600 text-white rounded-xl flex flex-col justify-center items-center flex-grow min-w-14 p-3">
+                    <h1 class="font-bold text-xl sm:text-2xl md:text-3xl">53</h1>
+                    <p class="text-sm sm:text-base">Seconds</p>
+                </div>
+            </div>
+        
+            <!-- Button (Fixed to bottom) -->
+            <div class="mt-auto mb-4">
+                <button type="submit" class="font-bold text-xl sm:text-2xl bg-blue-500 rounded-md px-8 py-3 w-full sm:w-auto">BUY NOW</button>
+            </div>
+        </div>
+
+</body>
+</html>
+
+
+
