@@ -1,0 +1,55 @@
+
+body{
+    max-width: 1920px !important;
+    margin: 0 auto !important;
+  }
+  body img {
+       transition:transform 0.3s ease-in-out;
+    }
+    body img:hover {
+      transform: scale(0.9); 
+    }
+  
+    body a,li{
+      transition:transform 0.3s ease-in-out;
+  
+    }
+    body a:hover {
+      transform: translateX(10px);
+    }
+    body li:hover {
+      background-color: white;
+      color: blue;
+      padding: 2px 4px;
+      border-radius: 10px;
+    }
+    body button:hover {
+      background-color: rgb(243, 138, 0);
+     
+    }
+  
+    .box{
+      transition:transform 0.3s ease;
+    }
+  
+    .box:hover{
+      background-color:  white;
+      border: 2px solid rgb(218, 105, 13);
+      box-shadow: 0;
+      /* transform: scale();  */
+      transform: translateX(2px);
+  
+    }
+  
+    .icon-container i:hover{
+      background-color: blue;
+      color: white;
+  
+    }
+
+    .makeStar:hover{
+      color: #ef4444;
+    }
+  
+  
+  
